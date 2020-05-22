@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+
+        <title>Conway's Game of Life</title>
+
+        <link href="index.css" rel="stylesheet">
+        <script defer src="dist/app.bundle.js"></script>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run Conway's Game of Life.</noscript>
+        <main>
+            <div class="config">
+                <h1 class="config__header">Conway's Game of Life</h1>
+                <div class="config__panel">
+                    <div class="config__buttons">
+                        <button class="config__stop-start-button">Stop</button>
+                        <button class="config__clear-button">Clear</button>
+                        <button class="config__random-button">Random</button>
+                        <label>
+                            Draw
+                            <input type="checkbox" class="config__drawmode-checkbox">
+                        </label>
+                        <label>
+                            Borders
+                            <input type="checkbox" class="config__bordermode-checkbox">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Step
+                            <input type="number" readOnly value="1" class="config__step-count">
+                        </label>
+                    </div>
+                </div>
+                <div class="catalogue-wrapper"></div>
+            </div>
+            <div class="game">
+                <div class="game__canvas-wrapper">
+                    <canvas class="game__grid" width="752px" height="752px"></canvas>
+                    <canvas class="game__hover" width="752px" height="752px"></canvas>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

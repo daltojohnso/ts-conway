@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.config {
+    margin: 0 0 1rem 0;
+}
+
+.config__header {
+    margin: 0.33rem;
+}
+
+.config__panel {
+    padding:  0.25rem;
+    border: 1px solid gray;
+}
+
+.game__canvas-wrapper {
+    position: relative;
+}
+
+.game__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
