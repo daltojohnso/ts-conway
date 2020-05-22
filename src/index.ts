@@ -12,18 +12,7 @@ startGame();
 
 function emit (type: UpdateType, partialConfig: Partial<GameConfig>): void {
     const oldConfig = config;
-
-    switch (type) {
-        case 'matrix:change':
-            break;
-        case 'gameState:change':
-            break;
-        case 'borderMode:change':
-            break;
-        case 'drawMode:change':
-            break;
-    }
-
+    
     config = {
         ...config,
         ...partialConfig

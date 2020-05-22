@@ -25,7 +25,7 @@ export function initHover (
     document.addEventListener('mouseup', onMouseup);
 
     return (type: UpdateType, updatedConfig: GameConfig): void => {
-        type;
+        type; // clearing the compilation err
         config = updatedConfig;
     };
 }
